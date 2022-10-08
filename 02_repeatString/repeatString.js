@@ -1,10 +1,12 @@
 const repeatString = function(string, num) {
 
     //FOR LOOP
+    if (num >= 0) {
     let repeatedString = [];
     for (let i = 0; i < num; i++){
         repeatedString.push(string) 
     } return repeatedString.join("");
+    } else {return "ERROR"};
 
     // //REPEAT METHOD
     // return string.repeat(num);
