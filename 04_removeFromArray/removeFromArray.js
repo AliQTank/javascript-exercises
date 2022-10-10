@@ -1,7 +1,8 @@
 const removeFromArray = function(array, valueToRemove) {
     let newArray = [...array];
-    let valueToremoveLength = null;
-    if (!Array.isArray(valueToRemove)){
+    let argumentsLength = arguments.length;
+    
+    if (argumentsLength === 2){
         for (let i = 0; i <= newArray.length; i++){
             if (newArray[i] === valueToRemove){
                 let firstPartOfArray = newArray.slice(0, newArray.indexOf(valueToRemove));
