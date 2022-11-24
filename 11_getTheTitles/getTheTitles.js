@@ -1,4 +1,5 @@
-const getTheTitles = function() {
+const getTheTitles = function(arrayOfObjects) {
+    return arrayOfObjects.map(titles => titles.title);
 
 };
 
